@@ -49,4 +49,8 @@ describe("example to-do app", function () {
       }
     });
   });
+
+  it.only('Write excel', function(){
+    cy.task("writeXlsx",'cypress/fixtures/users.xlsx');
+  })
 });
